@@ -1,6 +1,7 @@
 import numpy
 from numpy import matrix
 
+#OLS Method
 def regression(y,X):
 	#generalized linear regression formula
 	B_vector=(X.H*X)**(-1)*X.H*y
