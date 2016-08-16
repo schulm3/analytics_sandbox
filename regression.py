@@ -4,6 +4,7 @@ from numpy import matrix
 #OLS Method
 def regression(y,X):
 	#generalized linear regression formula
+	#The matrix '(X.H*X)**(-1)*X.H' is called the Moore-Penrose pseudoinverse matrix of X.
 	B_vector=(X.H*X)**(-1)*X.H*y
 	
 	#if values are really small, lets just make them 0 for simplicity
